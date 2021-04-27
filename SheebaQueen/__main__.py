@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow` [🤗](https://telegra.ph/file/7e61fe06a9c02747249c4.jpg) `My name is` *Sheeba*
+`Hellow` [🤗](https://telegra.ph/file/b222e851d7c395223e37d.jpg) `My name is` *Sheeba*
 `I'm here to help in managing your Kingdoms! Hit` *📚Commands*   
 """
 
@@ -96,11 +96,11 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'm` [Sheeba Queen 🙋‍♀️](https://telegra.ph/file/7e61fe06a9c02747249c4.jpg)
+`Hi.. I'm` [Sheeba Queen 🙋‍♀️](https://telegra.ph/file/b222e851d7c395223e37d.jpg)
 `Click on the buttons below to get documentation about specific modules..`"""
 
 
-Sheeba_IMG = "https://telegra.ph/file/7e61fe06a9c02747249c4.jpg"
+Sheeba_IMG = "https://telegra.ph/file/b222e851d7c395223e37d.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](#) or by contacting @\
@@ -358,7 +358,7 @@ def yone_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_Sheeba's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com//SheebaQueen).
+                 \nHere is the [💾Repository](https://github.com/developer-boy-sdowner/SheebaQueen).
                  \n\nIf you have any question about yone, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
