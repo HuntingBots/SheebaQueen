@@ -7,7 +7,7 @@ from faker.providers import internet
 from telethon import events
 
 from SheebaQueen.pyrogramee.telethonbasics import is_admin
-from SheebaQueen.services.telethon import tbot
+from SheebaQueen.pyrogramee.telethon import tbot
 
 
 @tbot.on(events.NewMessage(pattern="/fakegen$"))
