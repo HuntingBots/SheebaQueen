@@ -63,5 +63,5 @@ envparse
 better_profanity
 textblob 
 nudepy
-
+faker
 motor
