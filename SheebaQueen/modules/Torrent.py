@@ -1,4 +1,4 @@
-import requests
+#import requests
 from telethon import *
 from telethon import events
 from telethon.tl import functions, types
@@ -398,4 +398,4 @@ __help__ = """
 Special Credits to Sumanjay for api and also for julia project
 """
 
-__mod_name__ = "Torrent"
+__mod_name__ = "Torrent"#
