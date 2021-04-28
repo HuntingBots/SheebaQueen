@@ -6,7 +6,7 @@ from faker import Faker
 from faker.providers import internet
 from telethon import events
 
-from SheebaQueen.function.telethonbasics import is_admin
+from SheebaQueen.pyrogramee.telethonbasics import is_admin
 from SheebaQueen.services.telethon import tbot
 
 
