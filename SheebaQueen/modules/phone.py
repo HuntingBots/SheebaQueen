@@ -3,8 +3,8 @@ import json
 import requests
 from telethon import types
 
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot as client
+from SheebaQueen.events import register
+from SheebaQueen.pyrogramee.telethon import tbot as client
 
 
 async def is_register_admin(chat, user):
