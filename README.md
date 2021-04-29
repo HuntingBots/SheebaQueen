@@ -15,7 +15,7 @@
 </p>
 
 # SheebaQueen
-Me On Telegram [✨SheebaQueen✨](https://t.me/SheebaQueen)
+Me On Telegram [✨SheebaQueen✨](https://t.me/Sheeba_Queenbot)
 
 ## How To Host
 The easiest way to deploy this Bot
