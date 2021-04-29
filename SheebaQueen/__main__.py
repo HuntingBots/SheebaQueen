@@ -346,7 +346,7 @@ def help_button(update, context):
 
 
 @run_async
-def yone_about_callback(update, context):
+def sheeba_about_callback(update, context):
     query = update.callback_query
     if query.data == "Sheeba_":
         query.message.edit_text(
@@ -357,9 +357,9 @@ def yone_about_callback(update, context):
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Sheeba's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/developer-boy-sdowner/SheebaQueen).
-                 \n\nIf you have any question about yone, let us know at .""",
+                
+                 \nHere is the [💾Repository avail soon](https://t.me/Developer_boy_sd_owner).
+                 \n\nIf you have any question about sheeba, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -381,23 +381,23 @@ def yone_about_callback(update, context):
 
 
 @run_async
-def Source_about_callback(update, context):
+def owner_about_callback(update, context):
     query = update.callback_query
-    if query.data == "source_":
+    if query.data == "owner_":
         query.message.edit_text(
             text=""" Hi..🤗 I'm *Sheeba*
-                 \nHere is the [Source Code](https://github.com//SheebaQueen) .""",
+                 \nHere is the [owner](https://t.me/Developer_boy_sd_owner) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
+                    InlineKeyboardButton(text="Go Back", callback_data="owner_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "source_back":
+    elif query.data == "owner_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -699,7 +699,7 @@ def main():
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
     about_callback_handler = CallbackQueryHandler(sheeba_about_callback, pattern=r"sheeba_")
-    source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
+    source_callback_handler = CallbackQueryHandler(owner_about_callback, pattern=r"owner_")
 
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
@@ -708,7 +708,7 @@ def main():
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(about_callback_handler)
-    dispatcher.add_handler(source_callback_handler)
+    dispatcher.add_handler(owner_callback_handler)
     dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
